@@ -104,6 +104,13 @@ margin: 30px;
     font-size: 40px;
     margin-top: 20px;
 }
+.top> .day2{
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
 .top> .min, .max{
     font-size: 23px;
 }

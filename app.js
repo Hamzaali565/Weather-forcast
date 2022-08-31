@@ -6,6 +6,7 @@ axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=karachi&appid=49cc
 let q = document.querySelector("#mainTop").innerHTML =
         `<div class="top">
             <div class="day1">${response.data.city.name}</div>
+            <div class="day2">${moment(response.data.list[0].dt_txt).format('ddd')}</div>
             <img src="img/10d@2x.png" alt="">
             <div class="min"> min: ${response.data.list[0].main.temp_min}</div>
             <div class="max"> max: ${response.data.list[0].main.temp_max}</div>
