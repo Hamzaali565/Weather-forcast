@@ -1,0 +1,53 @@
+body {
+    background: url('https://images.unsplash.com/photo-1621274403997-37aace184f49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1');
+    background-size: cover;
+}
+.allDiv{
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+/* border: 1px solid black; */
+height: 400px;
+/* padding: 20px; */
+}
+/* for Chrome */
+.allDiv::-webkit-scrollbar {
+display: none;
+
+}
+.allDiv> .boxDiv{
+background: rgba( 190, 81, 63, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px;
+height: 180px;
+padding: 50px;
+/* margin-top: 20px; */
+}
+.allDiv> .boxDiv> .day{
+border: 1px solid whitesmoke;
+color: black;
+padding: 5px 15px 5px 15px;
+background-color: white;
+font-family: sans-serif;
+/* margin-top: 20px; */
+border-radius: 20px;
+}
+.icon{
+    color: green;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    cursor: pointer;
+ /* display: flex; */
+ /* justify-content: space-between; */
+    font-size: 20px;
+}
