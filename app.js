@@ -1,7 +1,18 @@
 axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=karachi&appid=49cc8c821cd2aff9af04c9f98c36eb74&units=metric`)
 .then(function (response) {
     // handle success
-    console.log(response.data);
+    console.log(response.data.list[0].main.temp_max);
+
+let q = document.querySelector("#mainTop").innerHTML =
+        `<div class="top">
+            <div class="day1">${response.data.city.name}</div>
+            <img src="img/10d@2x.png" alt="">
+            <div class="min"> min: ${response.data.list[0].main.temp_min}</div>
+            <div class="max"> max: ${response.data.list[0].main.temp_max}</div>
+        </div>`
+
+
+
     let dayWise = [];
     let dateOfMonth = null;
     let counter = -1;
