@@ -59,16 +59,15 @@ h1{
 .input{
     display: flex;
     justify-content: center;
-}
-input{
-    
+} 
+ input{     
     padding: 10px;
     border: 8px solid black;
     border-radius: 20px;
     width: 250px;
     /* background: fixed; */
     /* color: blue */
-}
+ }
 .btn{
     display:flex ;
     justify-content: center;
